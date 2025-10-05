@@ -108,3 +108,36 @@ console.log(myCounter()); // 2 (The inner function "closes over" and preserves '
 //    header.style.color = 'red'; // Inline styling change
 // });
 */
+//create a game to find the gamenumber by keep asking the user an input
+let gamenum=30;
+let userin=prompt("randomnum");
+while(gamenum!=userin){//keeps taking the input
+     userin=prompt("again");
+}
+console.log("hurrah!");
+
+//STRINGS
+//-->//nameofsringt.length
+//-->//indices, strname[indices string with 0]
+
+//TEMPLATE LITERAL ARE SPECIAL KIND OF STRING
+let special=`template literal ${1+2+3}`; //CAN EVEN SOLVE EXPRESSINS
+console.log(special);
+let uselit=`teh cost of ${singham.dso} is ${singham.vvyu}`; //can print without commas using template literal
+console.log(uselit);
+console.log("the price of",singham.dso,"is",singham.vvyu); //template literals prevents such mess
+
+//BUIT IN METHODS-- don,t alter the org str, makes another and store
+//strname.toUpperCase() 
+//strname.toLowerCase()
+//strname.trim()-->removes the whitespace from strting and end
+//strname.slice(start,end?{noninclusive and optional})-->returns part of string
+//strname.concat(strname.2)-->joins two string
+//strname.replace(oldval,newval)-->only first occurance
+//strname.replaceAll(oldval,newval)-->replaces all values in the string, all occurance
+//strname.charAt(idx)
+
+let username=prompt("enter your name");
+let sugge="@"+ username + username.length;
+console.log(sugge);
+
