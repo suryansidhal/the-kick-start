@@ -140,4 +140,39 @@ console.log("the price of",singham.dso,"is",singham.vvyu); //template literals p
 let username=prompt("enter your name");
 let sugge="@"+ username + username.length;
 console.log(sugge);
+//arrays
+let marks=[1,2,3,78,90];
+console.log(marks.length) //property to find the length of the array
+//array is an object datatype
+//array is mutable. in console write, marks[indx]=newvalue;
+//accessing the value of arrayusing for of loop
+let sum=0;
+for(let mark of marks){
+    sum+=mark;
+}
+console.log(sum);
+
+//discount question
+let price=[250,890,765,789,345];
+let disc=0
+for(let val of price){
+    disc=10/100*val;
+    val-=disc;
+    console.log(val);
+}
+
+//array methods
+
+//push()--> put values at end //namearr.push("val")
+//pop()-->dlt from end and return //namearr.pop()
+//toString()-->convert array to string // namearr.toString() //creates new arr of strings
+//namearr.concat(secondnamearr)--> adds multiple arrays and returns it
+//namearr.unshift("value")-->adds the value to the start
+//namearr.shift()-->dlt from start and returns it
+//namearr.slice(startindx,endindx), end idx isn't included, gives you the part, don't change the org array
+//namearr.splice(startindx,how many elements to dlt from the startindx it includes the starting indx, new ele to add in the startindx)
+let quest=[1,2,3,5,6];
+quest.splice(2,1,101); //add element
+// pass only single ele in arr then dlt everything afterwards
+
 
