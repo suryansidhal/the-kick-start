@@ -174,5 +174,92 @@ for(let val of price){
 let quest=[1,2,3,5,6];
 quest.splice(2,1,101); //add element
 // pass only single ele in arr then dlt everything afterwards
+//using arrow function to count the no of vowels in a word
+const VowelsCount=(str)=>{
+    let COUNT=0;
+    for(const char of str){
+        if(char=== 'a'||
+            char=== 'e'||
+            char=== 'i'||
+            char=== 'o'||
+            char==='u'||
+            char=== 'A'||
+            char=== 'E'||
+            char==='I'||
+            char=== 'O'||
+            char=== 'U') 
+            {
+                COUNT++;
+            }
+            
+        }
+  return COUNT;
+        
+    }
+
+
+    //forEach(callback function)   {called only for arrays}
+    let arr=[1,2,3,4,5];    //prints the elements of the arr
+    arr.forEach(function PrintValue(val){
+        console.log(val);
+    })
+
+
+    //majorily they are passed as arrow function
+    arr.forEach( (val,idx,arr)=>{  //parameters that you can pass (val,idx,arr)
+        console.log(val,idx,arr);
+    }) 
+
+
+    //map function
+    //similar to the forEach function
+ let arr1=[78,99,90];
+arr1.map((val)=>{
+ console.log(val);
+} )
+
+
+//filter function filters out the required valu eto get us new array to help
+
+let arr2=[2,3,5,6,8];
+let newarr= arr2.filter((val)=>{
+    return val %2===0;
+})
+
+console.log(newarr);
+
+//reduce --> used tu reduce the array into a single value
+let arr3=[23,34,5,54,98];
+const sumum= arr3.reduce((res,curr)=>{
+      return res+curr;  //res idx=1, curr idx=2, moves as we do furthe work
+})
+
+console.log(sumum)
+const sumuum= arr3.reduce((prev,curr)=>{
+      return prev>curr?prev:curr; //res idx=1, curr idx=2, moves as we do furthe work
+})
+
+console.log(sumuum);
+
+//filter marks greater than 90
+let marksgreater= arr3.filter((val)=>{
+    return val>90;
+})
+
+console.log(marksgreater);
+
+//make an array of n, sum of all elements nd product of elements
+let nelements= prompt("n elements of array");
+let arr4=[];
+for(let i=1;i<=nelements;i++){
+     arr4[i-1]=i;
+}
+console.log(arr4)
+
+let summ=arr4.reduce((prev,curr)=>{
+    return prev+curr;
+})
+console.log(summ);
+
 
 
